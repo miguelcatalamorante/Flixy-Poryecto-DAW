@@ -66,8 +66,8 @@ form.addEventListener('submit', (event) => {
         return;
     }
 
-    message.textContent = 'Formulario validado. El inicio de sesión real estará disponible cuando conectes el backend.';
-});
+// Navegar al Dashboard tras validar el formulario
+window.location.href = "index.html";});
 
 // Limpiar errores al escribir
 email.addEventListener('input', () => {

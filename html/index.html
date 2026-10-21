@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra profesionales de confianza en FIXLY.">
+
+    <title>Inicio | FIXLY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body class="dashboard-page">
+
+    <!-- CABECERA -->
+    <header class="dashboard-header">
+
+        <nav class="dashboard-nav" aria-label="Navegación principal">
+
+            <a href="index.html" class="dashboard-logo">
+                fixly<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
+                <li><a href="#mis-solicitudes">Mis solicitudes</a></li>
+                <li><a href="#mensajes" id="mensajes-link">Mensajes</a></li>
+            </ul>
+
+            <section class="nav-user" aria-label="Opciones de usuario">
+
+                <button class="notification-btn" id="notificaciones" type="button" aria-label="Notificaciones">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/>
+                        <path d="M10 21h4"/>
+                    </svg>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <a href="login.html" class="profile-link">
+                    <span class="avatar">LM</span>
+                    <span class="profile-name">Lucía Martín</span>
+                    <span aria-hidden="true">›</span>
+                </a>
+
+            </section>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ZONA AZUL DE BIENVENIDA -->
+        <section class="dashboard-hero" aria-labelledby="hero-title">
+
+            <div class="dashboard-container">
+
+                <div class="hero-content">
+
+                    <div class="hero-text">
+                        <p class="hero-greeting">Hola, Lucía</p>
+
+                        <h1 id="hero-title">
+                            ¿Qué necesitas solucionar hoy?
+                        </h1>
+
+                        <p class="hero-description">
+                            Cuéntanos qué necesitas y recibe ofertas de profesionales de confianza.
+                        </p>
+                    </div>
+
+                    <a href="crear.html" class="publish-btn">
+                        <span aria-hidden="true">＋</span>
+                        Publicar solicitud
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BUSCADOR -->
+        <section class="search-section" aria-label="Buscar servicios">
+
+            <div class="dashboard-container">
+
+                <form class="search-box" id="search-form" role="search">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"/>
+                        <path d="m16 16 5 5"/>
+                    </svg>
+
+                    <label for="search-input" class="sr-only">
+                        ¿Qué servicio necesitas?
+                    </label>
+
+                    <input
+                        type="search"
+                        id="search-input"
+                        placeholder="¿Qué servicio necesitas?"
+                        autocomplete="off"
+                    >
+
+                    <button type="submit" class="search-btn">
+                        Buscar
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICIOS POPULARES -->
+        <section class="services-section dashboard-container" id="servicios">
+
+            <header class="section-heading">
+
+                <div>
+                    <p class="section-eyebrow">EXPLORA</p>
+                    <h2>Servicios populares</h2>
+                </div>
+
+                <a href="#servicios" class="section-link" id="ver-servicios">
+                    Ver todos <span aria-hidden="true">›</span>
+                </a>
+
+            </header>
+
+
+            <div class="services-grid">
+
+                <a href="crear.html?categoria=fontaneria" class="service-card" data-service="fontaneria">
+
+                    <span class="service-icon plumbing">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13Z"/>
+                            <path d="M9 16a3 3 0 0 0 3 3"/>
+                        </svg>
+                    </span>
+
+                    <strong>Fontanería</strong>
+                    <span class="card-arrow" aria-hidden="true">›</span>
+
+                </a>
+
+
+                <a href="crear.html?categoria=electricidad" class="service-card" data-service="electricidad">
+
+                    <span class="service-icon electricity">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m13 2-9 12h7l-1 8 10-13h-7l1-7Z"/>
+                        </svg>
+                    </span>
+
+                    <strong>Electricidad</strong>
+                    <span class="card-arrow" aria-hidden="true">›</span>
+
+                </a>
+
+
+                <a href="crear.html?categoria=informatica" class="service-card" data-service="informatica">
+
+                    <span class="service-icon computing">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="16" rx="3"/>
+                            <path d="m9 9-3 3 3 3m6-6 3 3-3 3"/>
+                        </svg>
+                    </span>
+
+                    <strong>Informática</strong>
+                    <span class="card-arrow" aria-hidden="true">›</span>
+
+                </a>
+
+
+                <a href="crear.html?categoria=pintura" class="service-card" data-service="pintura">
+
+                    <span class="service-icon painting">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 3a9 9 0 1 0 0 18h2a2 2 0 0 0 1-4 2 2 0 0 1 1-4h2a3 3 0 0 0 3-3A9 9 0 0 0 12 3Z"/>
+                            <path d="M7 11h.01M9 7h.01M15 7h.01M18 10h.01"/>
+                        </svg>
+                    </span>
+
+                    <strong>Pintura</strong>
+                    <span class="card-arrow" aria-hidden="true">›</span>
+
+                </a>
+
+
+                <a href="crear.html?categoria=limpieza" class="service-card" data-service="limpieza">
+
+                    <span class="service-icon cleaning">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m12 2 1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8L12 2Z"/>
+                            <path d="m19 17 .8 2.2L22 20l-2.2.8L19 23l-.8-2.2L16 20l2.2-.8L19 17Z"/>
+                        </svg>
+                    </span>
+
+                    <strong>Limpieza</strong>
+                    <span class="card-arrow" aria-hidden="true">›</span>
+
+                </a>
+
+
+                <a href="crear.html?categoria=mudanzas" class="service-card" data-service="mudanzas">
+
+                    <span class="service-icon moving">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="6" width="12" height="11" rx="1"/>
+                            <path d="M14 10h4l4 4v3h-8"/>
+                            <circle cx="7" cy="18" r="2"/>
+                            <circle cx="18" cy="18" r="2"/>
+                        </svg>
+                    </span>
+
+                    <strong>Mudanzas</strong>
+                    <span class="card-arrow" aria-hidden="true">›</span>
+
+                </a>
+
+            </div>
+
+            <p id="search-message" class="search-message" role="status" aria-live="polite"></p>
+
+        </section>
+
+
+        <!-- MIS SOLICITUDES -->
+        <section class="requests-section dashboard-container" id="mis-solicitudes">
+
+            <header class="section-heading">
+
+                <div>
+                    <p class="section-eyebrow">TU ACTIVIDAD</p>
+                    <h2>Mis solicitudes</h2>
+                </div>
+
+                <a href="detalle.html" class="section-link">
+                    Ver todas <span aria-hidden="true">›</span>
+                </a>
+
+            </header>
+
+
+            <article class="request-card">
+
+                <a href="detalle.html" class="request-main">
+
+                    <span class="request-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13Z"/>
+                        </svg>
+                    </span>
+
+                    <div class="request-info">
+
+                        <div class="request-title-row">
+                            <h3>Reparar fuga en grifo de cocina</h3>
+                            <span class="request-status">Abierta</span>
+                        </div>
+
+                        <div class="request-meta">
+                            <span>⌖ Madrid, Chamberí</span>
+                            <span>◷ Publicado hoy</span>
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <a href="detalle.html" class="request-offers" aria-label="Ver las 4 ofertas de esta solicitud">
+                    <strong>4</strong>
+                    <small>ofertas</small>
+                </a>
+
+                <a href="detalle.html" class="request-arrow" aria-label="Ver detalle de la solicitud">
+                    ›
+                </a>
+
+            </article>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
