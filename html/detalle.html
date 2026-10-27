@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis solicitudes | FIXLY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/solicitudes.css">
+    <script src="../js/solicitudes.js" defer></script>
+</head>
+
+<body class="dashboard-page solicitudes-page">
+
+    <header class="dashboard-header">
+        <nav class="dashboard-nav" aria-label="Navegación principal">
+            <a href="index.html" class="dashboard-logo">fixly<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="detalle.html" class="active" aria-current="page">Mis solicitudes</a></li>
+                <li><a href="mensajes.html">Mensajes</a></li>
+            </ul>
+
+            <div class="nav-user">
+                <span class="avatar">LM</span>
+                <span class="profile-name">Lucía Martín</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sol-container">
+
+        <a href="index.html" class="sol-back">‹ &nbsp; Volver</a>
+
+        <section class="sol-heading">
+            <p class="section-eyebrow">MIS SOLICITUDES</p>
+            <h1>Reparar fuga en grifo de cocina</h1>
+            <p>Publicada hoy a las 09:42</p>
+        </section>
+
+        <div class="sol-detail-grid">
+
+            <!-- DESCRIPCIÓN DE LA SOLICITUD -->
+            <article class="sol-card sol-detail-card">
+
+                <div class="sol-card-top">
+                    <span class="sol-status">● Solicitud abierta</span>
+
+                    <button
+                        class="sol-more"
+                        type="button"
+                        id="more-options"
+                        aria-label="Más opciones"
+                    >•••</button>
+                </div>
+
+                <h2>Descripción</h2>
+
+                <p>
+                    El grifo de la cocina tiene una fuga constante desde la base.
+                    Empezó hace un par de días y parece que va a más. Necesito
+                    que alguien revise la conexión y cambie las piezas necesarias.
+                </p>
+
+                <p>
+                    El acceso es sencillo y tengo disponibilidad por las tardes
+                    a partir de las 16:00.
+                </p>
+
+                <div class="sol-details">
+
+                    <div class="sol-data">
+                        <span class="sol-data-icon">♧</span>
+                        <div>
+                            <small>CATEGORÍA</small>
+                            <strong>Fontanería</strong>
+                        </div>
+                    </div>
+
+                    <div class="sol-data">
+                        <span class="sol-data-icon">€</span>
+                        <div>
+                            <small>PRESUPUESTO</small>
+                            <strong>50 € – 150 €</strong>
+                        </div>
+                    </div>
+
+                    <div class="sol-data">
+                        <span class="sol-data-icon">⌖</span>
+                        <div>
+                            <small>UBICACIÓN</small>
+                            <strong>Madrid, Chamberí</strong>
+                        </div>
+                    </div>
+
+                    <div class="sol-data">
+                        <span class="sol-data-icon">◷</span>
+                        <div>
+                            <small>FECHA</small>
+                            <strong>Lo antes posible</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- TARJETA OFERTAS -->
+            <aside class="sol-offers-summary">
+
+                <div class="sol-summary-icon">
+                    <icon-placeholder aria-hidden="true">▤</icon-placeholder>
+                </div>
+
+                <p class="sol-summary-label">PROFESIONALES INTERESADOS</p>
+
+                <strong class="sol-offer-count">4</strong>
+
+                <p class="sol-offer-caption">ofertas recibidas</p>
+
+                <p class="sol-offer-help">
+                    Compara perfiles, precios y opiniones antes de decidir.
+                </p>
+
+                <a href="ofertas.html" class="sol-blue-btn">
+                    Ver ofertas <span aria-hidden="true">›</span>
+                </a>
+
+                <small class="sol-security">
+                    Ejemplo de comparación de profesionales en FIXLY
+                </small>
+
+            </aside>
+
+        </div>
+
+        <p id="sol-feedback" class="sol-feedback" role="status" aria-live="polite"></p>
+
+    </main>
+
+</body>
+</html>

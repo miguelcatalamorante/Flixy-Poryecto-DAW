@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar ofertas | FIXLY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/solicitudes.css">
+    <script src="../js/solicitudes.js" defer></script>
+</head>
+
+<body class="dashboard-page solicitudes-page">
+
+    <header class="dashboard-header">
+        <nav class="dashboard-nav" aria-label="Navegación principal">
+            <a href="index.html" class="dashboard-logo">fixly<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="detalle.html" class="active">Mis solicitudes</a></li>
+                <li><a href="mensajes.html">Mensajes</a></li>
+            </ul>
+
+            <div class="nav-user">
+                <span class="avatar">LM</span>
+                <span class="profile-name">Lucía Martín</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="sol-container">
+
+        <a href="detalle.html" class="sol-back">‹ &nbsp; Volver</a>
+
+        <section class="sol-heading">
+            <p class="section-eyebrow">4 PROFESIONALES INTERESADOS</p>
+            <h1>Compara tus ofertas</h1>
+            <p>Elige la propuesta que mejor encaje contigo. No se realizará ningún cargo todavía.</p>
+        </section>
+
+        <section class="offers-list" aria-label="Ofertas recibidas">
+
+            <!-- OFERTA 1 -->
+            <article class="offer-card featured">
+
+                <span class="best-badge">☆ Mejor valorado</span>
+
+                <div class="offer-content">
+                    <div class="offer-person">
+                        <span class="offer-avatar">DR</span>
+
+                        <div>
+                            <h2>Daniel Ruiz</h2>
+                            <p>Fontanero profesional</p>
+                            <small>⭐ <strong>4,9</strong> (127 opiniones)</small>
+                        </div>
+                    </div>
+
+                    <blockquote class="offer-quote">
+                        “Hola Lucía, puedo pasar mañana por la tarde.
+                        El precio incluye desplazamiento, revisión
+                        y las piezas habituales.”
+                    </blockquote>
+
+                    <div class="offer-price">
+                        <small>PRECIO PROPUESTO</small>
+                        <strong>95 €</strong>
+                        <span>Todo incluido</span>
+                    </div>
+                </div>
+
+                <footer class="offer-actions">
+                    <a href="profesional.html?id=daniel" class="sol-outline-btn">
+                        ◉ &nbsp; Ver perfil
+                    </a>
+
+                    <button class="sol-blue-btn accept-offer"
+                            type="button"
+                            data-id="daniel">
+                        Aceptar oferta <span>›</span>
+                    </button>
+                </footer>
+            </article>
+
+            <!-- OFERTA 2 -->
+            <article class="offer-card">
+
+                <div class="offer-content">
+                    <div class="offer-person">
+                        <span class="offer-avatar avatar-marco">MV</span>
+                        <div>
+                            <h2>Marco Vidal</h2>
+                            <p>Fontanero profesional</p>
+                            <small>⭐ <strong>4,8</strong> (89 opiniones)</small>
+                        </div>
+                    </div>
+
+                    <blockquote class="offer-quote">
+                        “Buenas, tengo disponibilidad hoy a última hora.
+                        Llevo 8 años trabajando en reparaciones domésticas.”
+                    </blockquote>
+
+                    <div class="offer-price">
+                        <small>PRECIO PROPUESTO</small>
+                        <strong>80 €</strong>
+                        <span>Todo incluido</span>
+                    </div>
+                </div>
+
+                <footer class="offer-actions">
+                    <a href="profesional.html?id=marco" class="sol-outline-btn">
+                        ◉ &nbsp; Ver perfil
+                    </a>
+                    <button class="sol-blue-btn accept-offer"
+                            type="button"
+                            data-id="marco">
+                        Aceptar oferta <span>›</span>
+                    </button>
+                </footer>
+            </article>
+
+            <!-- OFERTA 3 -->
+            <article class="offer-card">
+
+                <div class="offer-content">
+                    <div class="offer-person">
+                        <span class="offer-avatar avatar-lucas">LM</span>
+                        <div>
+                            <h2>Lucas Moreno</h2>
+                            <p>Fontanero profesional</p>
+                            <small>⭐ <strong>4,7</strong> (64 opiniones)</small>
+                        </div>
+                    </div>
+
+                    <blockquote class="offer-quote">
+                        “Puedo realizar la reparación esta semana.
+                        Trabajo con garantía de 6 meses en todas mis intervenciones.”
+                    </blockquote>
+
+                    <div class="offer-price">
+                        <small>PRECIO PROPUESTO</small>
+                        <strong>110 €</strong>
+                        <span>Todo incluido</span>
+                    </div>
+                </div>
+
+                <footer class="offer-actions">
+                    <a href="profesional.html?id=lucas" class="sol-outline-btn">
+                        ◉ &nbsp; Ver perfil
+                    </a>
+                    <button class="sol-blue-btn accept-offer"
+                            type="button"
+                            data-id="lucas">
+                        Aceptar oferta <span>›</span>
+                    </button>
+                </footer>
+            </article>
+
+            <!-- OFERTA 4 -->
+            <article class="offer-card">
+
+                <div class="offer-content">
+                    <div class="offer-person">
+                        <span class="offer-avatar avatar-pablo">PS</span>
+                        <div>
+                            <h2>Pablo Serrano</h2>
+                            <p>Fontanero profesional</p>
+                            <small>⭐ <strong>4,6</strong> (52 opiniones)</small>
+                        </div>
+                    </div>
+
+                    <blockquote class="offer-quote">
+                        “Puedo revisar el grifo y ofrecer una solución
+                        duradera. Tengo disponibilidad esta semana.”
+                    </blockquote>
+
+                    <div class="offer-price">
+                        <small>PRECIO PROPUESTO</small>
+                        <strong>105 €</strong>
+                        <span>Todo incluido</span>
+                    </div>
+                </div>
+
+                <footer class="offer-actions">
+                    <a href="profesional.html?id=pablo" class="sol-outline-btn">
+                        ◉ &nbsp; Ver perfil
+                    </a>
+                    <button class="sol-blue-btn accept-offer"
+                            type="button"
+                            data-id="pablo">
+                        Aceptar oferta <span>›</span>
+                    </button>
+                </footer>
+            </article>
+
+        </section>
+
+        <p class="sol-feedback" id="sol-feedback" role="status" aria-live="polite"></p>
+
+    </main>
+
+    <!-- VENTANA DE CONFIRMACION FIXLY -->
+    <dialog id="modal-confirmacion" class="fixly-modal">
+
+        <div class="modal-content">
+
+            <div class="modal-icon">
+                <span aria-hidden="true">✓</span>
+            </div>
+
+            <h2 id="modal-titulo">Confirmar servicio</h2>
+
+            <p id="modal-descripcion">
+                ¿Quieres aceptar esta oferta?
+            </p>
+
+            <div class="modal-resumen">
+
+                <div>
+                    <span>Profesional</span>
+                    <strong id="modal-profesional"></strong>
+                </div>
+
+                <div>
+                    <span>Servicio</span>
+                    <strong>Reparación de fontanería</strong>
+                </div>
+
+                <div class="modal-total">
+                    <span>Precio acordado</span>
+                    <strong id="modal-precio"></strong>
+                </div>
+
+            </div>
+
+            <div class="modal-botones">
+
+                <button type="button" id="modal-cancelar" class="modal-cancelar">
+                    Cancelar
+                </button>
+
+                <button type="button" id="modal-aceptar" class="modal-aceptar">
+                    Confirmar servicio
+                </button>
+
+            </div>
+
+            <small class="modal-aviso">
+                Demostración del Hito 1. No se realizará ningún pago ni contratación real.
+            </small>
+
+        </div>
+
+    </dialog>
+
+</body>
+</html>

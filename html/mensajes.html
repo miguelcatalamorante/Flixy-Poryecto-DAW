@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro de mensajes de FIXLY.">
+    <title>Mensajes | FIXLY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mensajes.css">
+    <script src="../js/mensajes.js" defer></script>
+</head>
+
+<body class="dashboard-page mensajes-page">
+
+    <!-- CABECERA GENERAL -->
+    <header class="dashboard-header">
+        <nav class="dashboard-nav" aria-label="Navegación principal">
+
+            <a href="index.html" class="dashboard-logo">
+                fixly<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="detalle.html">Mis solicitudes</a>
+                </li>
+                <li>
+                    <a href="mensajes.html" class="active" aria-current="page">
+                        Mensajes
+                    </a>
+                </li>
+            </ul>
+
+            <div class="nav-user">
+                <span class="avatar">LM</span>
+                <span class="profile-name">Lucía Martín</span>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="messages-main">
+
+        <!-- TITULO -->
+        <section class="messages-intro">
+            <p class="section-eyebrow">COMUNICACIÓN</p>
+            <h1>Tus mensajes</h1>
+            <p>
+                Habla con los profesionales y organiza tus servicios.
+            </p>
+        </section>
+
+        <!-- CENTRO DE MENSAJERIA -->
+        <section class="messages-layout" aria-label="Centro de mensajes">
+
+            <!-- PANEL DE CONVERSACIONES -->
+            <aside class="conversations-panel" id="conversations-panel">
+
+                <div class="conversations-heading">
+                    <h2>Conversaciones</h2>
+                    <span class="conversation-count" id="conversation-count">3</span>
+                </div>
+
+                <div class="conversation-search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"/>
+                        <path d="m16 16 5 5"/>
+                    </svg>
+
+                    <label for="buscar-chat" class="sr-only">
+                        Buscar conversación
+                    </label>
+
+                    <input
+                        type="search"
+                        id="buscar-chat"
+                        placeholder="Buscar conversación..."
+                    >
+                </div>
+
+                <div class="conversations-list"
+                     id="conversations-list"
+                     aria-label="Lista de conversaciones">
+                    <!-- Generado desde JavaScript -->
+                </div>
+
+                <p class="messages-empty-search"
+                   id="empty-search"
+                   hidden>
+                    No se encontraron conversaciones.
+                </p>
+
+            </aside>
+
+
+            <!-- PANEL DE CHAT -->
+            <section class="chat-panel" id="chat-panel" aria-label="Conversación">
+
+                <!-- CABECERA DEL CHAT -->
+                <header class="chat-header">
+
+                    <button type="button"
+                            class="chat-back"
+                            id="chat-back"
+                            aria-label="Volver a conversaciones">
+                        ‹
+                    </button>
+
+                    <span class="chat-avatar" id="chat-avatar">DR</span>
+
+                    <div class="chat-user-info">
+                        <h2 id="chat-name">Daniel Ruiz</h2>
+                        <p id="chat-specialty">
+                            Profesional verificado
+                        </p>
+                    </div>
+
+                    <a href="profesional.html?id=daniel"
+                       class="chat-profile-btn"
+                       id="chat-profile">
+                        Ver perfil
+                    </a>
+
+                </header>
+
+                <!-- SOLICITUD RELACIONADA -->
+                <div class="chat-service-bar">
+
+                    <div class="chat-service-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 2C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-13Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="chat-service-info">
+                        <small>SOLICITUD RELACIONADA</small>
+                        <strong>Reparar fuga en grifo de cocina</strong>
+                    </div>
+
+                    <a href="detalle.html" class="chat-service-link">
+                        Ver solicitud ›
+                    </a>
+
+                </div>
+
+
+                <!-- MENSAJES -->
+                <div class="chat-messages"
+                     id="chat-messages"
+                     role="log"
+                     aria-label="Historial de conversación"
+                     aria-live="polite"
+                     aria-relevant="additions">
+                </div>
+
+
+                <!-- ESCRIBIR MENSAJE -->
+                <form class="chat-compose" id="chat-form">
+
+                    <label for="chat-input" class="sr-only">
+                        Escribe tu mensaje
+                    </label>
+
+                    <input
+                        type="text"
+                        id="chat-input"
+                        placeholder="Escribe un mensaje..."
+                        maxlength="500"
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit"
+                            class="chat-send-btn"
+                            aria-label="Enviar mensaje">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m22 2-7 20-4-9-9-4 20-7Z"/>
+                            <path d="M22 2 11 13"/>
+                        </svg>
+
+                    </button>
+
+                </form>
+
+                <p class="chat-demo-note">
+                    Prototipo de FIXLY · Los mensajes no se envían a profesionales reales.
+                </p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

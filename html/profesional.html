@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil profesional | FIXLY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/solicitudes.css">
+    <script src="../js/solicitudes.js" defer></script>
+</head>
+
+<body class="dashboard-page solicitudes-page">
+
+    <header class="dashboard-header">
+        <nav class="dashboard-nav" aria-label="Navegación principal">
+            <a href="index.html" class="dashboard-logo">fixly<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="detalle.html" class="active">Mis solicitudes</a></li>
+                <li><a href="mensajes.html">Mensajes</a></li>
+            </ul>
+
+            <div class="nav-user">
+                <span class="avatar">LM</span>
+                <span class="profile-name">Lucía Martín</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNER PERFIL -->
+    <section class="professional-hero">
+
+        <div class="sol-container">
+
+            <a href="ofertas.html" class="professional-back">
+                ‹ &nbsp; Volver a las ofertas
+            </a>
+
+            <div class="professional-hero-content">
+
+                <span class="professional-avatar" id="prof-avatar">DR</span>
+
+                <div class="professional-main-info">
+                    <small>♢ &nbsp; Identidad verificada (demostración)</small>
+
+                    <h1 id="prof-nombre">Daniel Ruiz</h1>
+
+                    <p id="prof-especialidad">
+                        Fontanero profesional · Madrid
+                    </p>
+
+                    <span>
+                        ⭐ <strong id="prof-rating">4,9</strong>
+                        · <span id="prof-opiniones">127</span> opiniones
+                    </span>
+                </div>
+
+                <div class="professional-hero-price">
+                    <small>SU OFERTA</small>
+                    <strong id="prof-precio-hero">95 €</strong>
+                    <span>Todo incluido</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTENIDO -->
+    <main class="professional-content sol-container">
+
+        <div class="professional-grid">
+
+            <div class="professional-left">
+
+                <!-- SOBRE MÍ -->
+                <section class="sol-card professional-section">
+                    <p class="section-eyebrow">SOBRE MÍ</p>
+
+                    <h2>Experiencia que da tranquilidad</h2>
+
+                    <p id="prof-descripcion">
+                        Fontanero profesional con más de 12 años de experiencia
+                        en instalaciones y reparaciones domésticas.
+                        Trabajo limpio, puntual y con garantía.
+                        Mi prioridad es que entiendas qué ocurre
+                        y cuál es la mejor solución.
+                    </p>
+
+                    <div class="professional-stats">
+
+                        <div>
+                            <strong id="prof-experiencia">12+</strong>
+                            <small>Años de experiencia</small>
+                        </div>
+
+                        <div>
+                            <strong id="prof-trabajos">340</strong>
+                            <small>Trabajos completados</small>
+                        </div>
+
+                        <div>
+                            <strong id="prof-satisfaccion">98%</strong>
+                            <small>Clientes satisfechos</small>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- SERVICIOS -->
+                <section class="sol-card professional-section">
+                    <p class="section-eyebrow">SERVICIOS</p>
+
+                    <h2>En qué puedo ayudarte</h2>
+
+                    <ul class="professional-services">
+                        <li>Reparación de fugas y grifos</li>
+                        <li>Instalación de sanitarios</li>
+                        <li>Desatascos domésticos</li>
+                        <li>Mantenimiento y revisiones</li>
+                    </ul>
+                </section>
+
+                <!-- OPINIONES -->
+                <section class="sol-card professional-section">
+
+                    <p class="section-eyebrow">OPINIONES</p>
+
+                    <div class="review-heading">
+                        <h2>Lo que dicen sus clientes</h2>
+                        <span>⭐ <strong id="prof-rating-review">4,9</strong></span>
+                    </div>
+
+                    <blockquote class="review-text">
+                        “Daniel fue muy puntual y resolvió el problema
+                        en menos de una hora. Dejó todo impecable
+                        y explicó cada paso. Totalmente recomendable.”
+                    </blockquote>
+
+                    <div class="review-author">
+                        <span class="avatar">AG</span>
+                        <div>
+                            <strong>Ana García</strong>
+                            <small>Hace 2 semanas</small>
+                        </div>
+                    </div>
+
+                    <small class="review-disclaimer">
+                        Opinión ilustrativa del prototipo.
+                    </small>
+
+                </section>
+
+            </div>
+
+            <!-- RESUMEN LATERAL -->
+            <aside class="sol-card professional-summary">
+
+                <p class="section-eyebrow">RESUMEN DE LA OFERTA</p>
+
+                <div class="summary-price">
+                    <strong id="prof-precio-resumen">95 €</strong>
+                    <small>Precio total</small>
+                </div>
+
+                <ul class="summary-benefits">
+                    <li>Desplazamiento incluido</li>
+                    <li>Material básico incluido</li>
+                    <li>Garantía de 6 meses</li>
+                </ul>
+
+                <button type="button"
+                        class="sol-blue-btn accept-offer"
+                        id="prof-accept"
+                        data-id="daniel">
+                    Aceptar oferta <span aria-hidden="true">›</span>
+                </button>
+
+                <small class="summary-note">
+                    Demostración: no se efectuará ningún pago.
+                </small>
+
+            </aside>
+
+        </div>
+
+        <p class="sol-feedback" id="sol-feedback" role="status" aria-live="polite"></p>
+
+    </main>
+
+    <!-- VENTANA DE CONFIRMACION FIXLY -->
+    <dialog id="modal-confirmacion" class="fixly-modal">
+
+        <div class="modal-content">
+
+            <div class="modal-icon">
+                <span aria-hidden="true">✓</span>
+            </div>
+
+            <h2 id="modal-titulo">Confirmar servicio</h2>
+
+            <p id="modal-descripcion">
+                ¿Quieres aceptar esta oferta?
+            </p>
+
+            <div class="modal-resumen">
+
+                <div>
+                    <span>Profesional</span>
+                    <strong id="modal-profesional"></strong>
+                </div>
+
+                <div>
+                    <span>Servicio</span>
+                    <strong>Reparación de fontanería</strong>
+                </div>
+
+                <div class="modal-total">
+                    <span>Precio acordado</span>
+                    <strong id="modal-precio"></strong>
+                </div>
+
+            </div>
+
+            <div class="modal-botones">
+
+                <button type="button" id="modal-cancelar" class="modal-cancelar">
+                    Cancelar
+                </button>
+
+                <button type="button" id="modal-aceptar" class="modal-aceptar">
+                    Confirmar servicio
+                </button>
+
+            </div>
+
+            <small class="modal-aviso">
+                Demostración del Hito 1. No se realizará ningún pago ni contratación real.
+            </small>
+
+        </div>
+
+    </dialog>
+
+</body>
+</html>

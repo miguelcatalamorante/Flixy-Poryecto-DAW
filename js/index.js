@@ -1,9 +1,3 @@
-
-// ======================================
-// FIXLY - DASHBOARD JAVASCRIPT
-// ======================================
-
-// Elementos del buscador
 const searchForm = document.querySelector('#search-form');
 const searchInput = document.querySelector('#search-input');
 const searchMessage = document.querySelector('#search-message');
@@ -115,20 +109,4 @@ document.querySelector('#notificaciones').addEventListener(
         alert('Las notificaciones estarán disponibles en próximos hitos.');
 
     }
-);
-
-
-// ======================================
-// MENSAJES
-// ======================================
-
-document.querySelector('#mensajes-link').addEventListener(
-    'click',
-    (event) => {
-
-        event.preventDefault();
-
-        alert('El sistema de mensajes estará disponible en próximos hitos.');
-
-    }
-);
+)
